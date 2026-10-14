@@ -1,23 +1,11 @@
 'use strict';
 
-// Implementation #1
-function incPrimitive(n) {
-    return n + 1;
-} 
-
-const a = 5;
-const b = incPrimitive(a);
-
-console.dir({a, b}); 
-
-
-// Implementation #2
-function incReference(num) {
-    return num.n += 1;
+function calculate(sum1, sum2) {
+    return sum1 + sum2
 }
 
-const obj = { n: 5 };
+const sum1 = 5
+const sum2 = 10
+const result = calculate(sum1, sum2)
 
-incReference(obj)
-
-console.dir(obj)
+console.dir(result)
